@@ -1,0 +1,144 @@
+:root{
+  --font_col:#FFFFF;
+  --layout_bg:#0437F2;
+  --single_emp_color:#a13ddbcf;
+  
+}
+
+
+
+.emp__layout {
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(244, 234, 234);
+  color: black;
+  padding: 15px;
+
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(84, 89, 103, 0.564);
+  border-top-right-radius: 10%;
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.container-employees,
+.container-empInfo {
+  width: 40%;
+  height: 80vh;
+  text-align: center;
+  color: var(--font_col);
+  /* overflow-y: scroll; */
+  min-width: 300px;
+  padding: 10px;
+}
+.emp__list {
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.single_emp_name {
+  height: 40px;
+  margin: 4px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: azure;
+  transition: 0.3s;
+
+  border-radius: 10px;
+  text-align: center;
+  align-content: center;
+  padding-top: auto;
+  overflow: hidden;
+}
+.active {
+  background-color: rgb(53, 212, 53);
+}
+.single_emp_name:not(.active):hover {
+  background-color: var(--single_emp_color);
+  color: var(--font_col);
+  cursor: pointer;
+}
+
+
+.profile_card {
+  width: 90%;
+  /* height: 500px; */
+  background-color: rgb(208, 144, 144);
+  box-shadow: 10px 10px 10px silver;
+  border-radius: 20px;
+}
+table {
+  width: 100%;
+}
+td {
+  padding: 10px;
+  /* width: 50px;  */
+  text-align: left;
+}
+.unClickable{
+  pointer-events: none;
+  opacity: 0.5;
+}
+.model {
+  position: absolute;
+  display: flex;
+  z-index: 9999;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translate(85%, 50%);
+  width: 35%;
+  height: 400px;
+  min-width: 500px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.model__title {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  border-bottom:solid 1px rgb(92, 90, 94) ;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #493304df;
+}
+.model__content {
+  overflow-y: scroll;
+}
+.model__footer {
+  height: 12%;
+  text-align: right;
+  background-color: aliceblue;
+}
+button {
+  padding: 5px;
+  margin: 5px;
+}
+input {
+  width: 45%;
+  height: 40px;
+  margin: 5px;
+  background-color: aliceblue;
+  color: black;
+  font-size: 1.2rem;
+  padding: 2px;
+  border: border-bottom;
+  border-radius: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
